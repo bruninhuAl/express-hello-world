@@ -40,6 +40,12 @@ app.get('/pokemons', (req, res) => {
   res.json(ashPokemons); 
 });
 
+const seiesFav = [
+  { id: 1, name: 'Stranger Things', genre: 'Sci-fi / Horror' },
+  { id: 2, name: 'Breaking Bad', genre: 'Crime / Drama' },
+  { id: 3, name: 'Game of Thrones', genre: 'Fantasy / Drama' }
+];
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
