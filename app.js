@@ -22,6 +22,24 @@ app.get('/tico', (req, res) => {
   res.send('teco')
 })
 
+const ashPokemons = [
+  { id: 1, name: 'Pikachu' },
+  { id: 2, name: 'Caterpie' },
+  { id: 3, name: 'Metapod' },
+  { id: 4, name: 'Butterfree' },
+  { id: 5, name: 'Pidgeotto' },
+  { id: 6, name: 'Pidgeot' },
+  { id: 7, name: 'Bulbasaur' },
+  { id: 8, name: 'Charmander' },
+  { id: 9, name: 'Charmeleon' },
+  { id: 10, name: 'Squirtle' }
+];
+
+app.get('/pokemons', (req, res) => {
+  console.log("Request for pokemons received!");
+  res.json(ashPokemons); 
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
